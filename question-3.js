@@ -1,11 +1,15 @@
 // Question 3: User Authentication
 
 function authenticateUser(username, password) {
-  const validUsername = "user123";
-  const validPassword = "securepass";
-
-  // เริ่มเขียนโค้ดตรงนี้
-}
+  const validUsername = username;
+  const validPassword = password;
+ // เริ่มเขียนโค้ดตรงนี้
+  if (validUsername === "user123" && validPassword === "securepass"){
+    return "Login successful.";
+  } else {
+    return "Login failed. Please check your username and password.";
+  }
+};
 
 // ตัวอย่างการใช้งาน
 const username1 = "user123";

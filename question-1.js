@@ -6,3 +6,15 @@ const inventory = {
 };
 
 // เริ่มเขียนโค้ดตรงนี้
+
+inventory.apple.quantity = 200; //เปลี่ยนจำนวนของ apple จาก 100 เป็น 200
+inventory.orange = {price: 20 ,quantity: 300}; //เพิ่ม orange ใน object inventory พร้อม ใส่ราคาและจำนวน
+
+const calculateApple = inventory.apple.price * inventory.apple.quantity;
+const calculateBanana = inventory.banana.price * inventory.banana.quantity;
+const calculateOrange = inventory.orange.price * inventory.orange.quantity;
+
+let priceAmount = calculateApple + calculateBanana + calculateOrange;
+
+//console.log(inventory); //check object inventory
+console.log("Total inventory value: "+ priceAmount + " baht"); //Total inventory value: 13,500 baht
